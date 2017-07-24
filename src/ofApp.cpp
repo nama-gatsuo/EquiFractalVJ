@@ -2,20 +2,28 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	shared_ptr<SceneBase> s0(new Tgrad());
+	shared_ptr<SceneBase> s0(new Mandelbox());
 	s0->setup();
 	scenes.push_back(s0);
+
+	shared_ptr<SceneBase> s1(new Tgrad());
+	s1->setup();
+	scenes.push_back(s1);
+
+	shared_ptr<SceneBase> s2(new PseudoKnightyan());
+	s2->setup();
+	scenes.push_back(s2);
 
 	plane.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
 	windowResized(ofGetWidth(), ofGetHeight());
 
-	cam.setDistance(15.);
+	cam.setDistance(5.);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 	
-	scenes[0]->update(0.);
+	scenes[mode]->update(0.);
 	cam.begin();
 	cam.end();
 }
@@ -23,14 +31,18 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 	
-	scenes[0]->render(cam, plane);
+	scenes[mode]->render(cam, plane);
 
 	ofDrawBitmapString("FPS: " + ofToString(ofGetFrameRate()), 10, 40);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-	if (key == ' ') scenes[0]->randomize();
+	if (key == ' ') scenes[mode]->randomize();
+	if (key == OF_KEY_RIGHT) {
+		mode++;
+		if (mode == scenes.size()) mode = 0;
+	}
 }
 
 //--------------------------------------------------------------

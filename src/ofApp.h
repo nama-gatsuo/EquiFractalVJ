@@ -4,6 +4,7 @@
 #include "scene/scenebase.h"
 #include "scene/mandelbox.h"
 #include "scene/Tgrad.h"
+#include "scene/PseudoKnightyan.h"
 
 class ofApp : public ofBaseApp{
 
@@ -20,6 +21,8 @@ private:
 	ofVboMesh plane;
 	ofFbo target;
 	
+	unsigned mode = 1;
+
 	vector<shared_ptr<SceneBase>> scenes;
 
 };

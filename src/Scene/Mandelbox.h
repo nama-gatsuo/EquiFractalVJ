@@ -26,12 +26,14 @@ public:
 
 			SmoothValue sv;
 			sv.set(range[i].x);
+			sv.setSpeed(0.01);
 			autoParams.push_back(sv);
 		}
 
-		offset.set("offset", ofVec3f(0.), ofVec3f(-1.), ofVec3f(5.));
+		offset.set("offset", ofVec3f(0.), ofVec3f(-5.), ofVec3f(5.));
 		panel.add(offset);
 		autoOffset.set(ofPoint(0.));
+		autoOffset.setSpeed(0.01);
 
 		rep.set("reptition", 0., 0.0, 8.0);
 

@@ -13,8 +13,6 @@ uniform float scale;
 uniform float rep;
 uniform vec3 offset;
 
-float pixel_size;
-
 void sphereFold(inout vec3 z, inout float dz){
     float r2 = dot(z, z);
     if (r2 < minRadius2) {
@@ -33,7 +31,7 @@ void boxFold(inout vec3 z, inout float dz){
 }
 
 float DF(vec3 z){
-    //z.xy = mod(z.xy + vec2(rep * 0.5), rep) - rep * 0.5;
+    //z = mod(z, 4.0);
     float dr = 1.0;
 
     for (int n = 0; n < 12; n++) {
@@ -47,4 +45,4 @@ float DF(vec3 z){
     return length(z) / abs(dr);
 }
 
-#pragma include "render.frag"
+#pragma include "simpleRenderer.frag"

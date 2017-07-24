@@ -1,3 +1,5 @@
+float pixel_size;
+
 vec2 intersect(in vec3 ro, in vec3 rd){
     float t = 1.0;
     float d = 1.0;
@@ -63,9 +65,9 @@ vec3 lighting(vec3 p, vec3 rd, float ps){
 
     float shadow = softshadow(p, l1_dir, 10.0);
 
-    float dif1 = max(0.0, dot(n, l1_col));
-    float dif2 = max(0.0, dot(n, l2_col));
-    float bac1 = max(0.3 + 0.7 * dot(vec3(-l1_dir.x, -1.0, -l1_dir.z), n), 0.0);
+    float dif1 = max(0.3, dot(n, l1_col));
+    float dif2 = max(0.3, dot(n, l2_col));
+    float bac1 = max(0.2 + 0.8 * dot(vec3(-l1_dir.x, -1.0, -l1_dir.z), n), 0.0);
     float bac2 = max(0.2 + 0.8 * dot(vec3(-l2_dir.x, -1.0, -l2_dir.z), n), 0.0);
     float spe = max(0.0, pow(clamp(dot(l1_dir, reflect(rd, n)), 0.0, 1.0), 10.0));
 

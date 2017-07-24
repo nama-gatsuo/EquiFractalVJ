@@ -14,10 +14,8 @@ uniform float scale;
 uniform vec3 p0;
 uniform vec3 offset;
 
-float pixel_size;
-
 float DF(vec3 z0) {
-
+    z0 = mod(z0, 2.0);
     vec4 s = vec4(vec3(scale), abs(scale));
     vec4 z = vec4(z0, 1.0);
     for (int n = 0; n < 3; n++) {
@@ -29,4 +27,4 @@ float DF(vec3 z0) {
     return dS;
 }
 
-#pragma include "render.frag"
+#pragma include "simpleRenderer.frag"

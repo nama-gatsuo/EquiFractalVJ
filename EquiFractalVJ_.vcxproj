@@ -258,6 +258,7 @@
     <ClInclude Include="src\CommonUtil.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\Scene\Mandelbox.h" />
+    <ClInclude Include="src\Scene\PseudoKnightyan.h" />
     <ClInclude Include="src\Scene\SceneBase.h" />
     <ClInclude Include="src\Scene\Tgrad.h" />
   </ItemGroup>
