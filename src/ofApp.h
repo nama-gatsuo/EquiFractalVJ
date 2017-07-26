@@ -5,6 +5,7 @@
 #include "scene/mandelbox.h"
 #include "scene/Tgrad.h"
 #include "scene/PseudoKnightyan.h"
+#include "Scene/Hartverdrahtet.h"
 
 class ofApp : public ofBaseApp{
 

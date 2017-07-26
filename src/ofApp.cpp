@@ -14,6 +14,10 @@ void ofApp::setup(){
 	s2->setup();
 	scenes.push_back(s2);
 
+	shared_ptr<SceneBase> s3(new Hartverdrahtet());
+	s3->setup();
+	scenes.push_back(s3);
+
 	plane.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
 	windowResized(ofGetWidth(), ofGetHeight());
 

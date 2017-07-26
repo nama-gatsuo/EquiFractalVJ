@@ -221,6 +221,9 @@
     <ClInclude Include="src\Scene\PseudoKnightyan.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\Scene\Hartverdrahtet.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

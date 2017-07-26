@@ -24,4 +24,4 @@ float DF(vec3 p){
 
 }
 
-#pragma include "EquiRenderer.frag"
+#pragma include "SimpleRenderer.frag"

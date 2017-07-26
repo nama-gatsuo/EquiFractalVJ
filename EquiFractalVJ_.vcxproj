@@ -257,6 +257,7 @@
     <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h" />
     <ClInclude Include="src\CommonUtil.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\Scene\Hartverdrahtet.h" />
     <ClInclude Include="src\Scene\Mandelbox.h" />
     <ClInclude Include="src\Scene\PseudoKnightyan.h" />
     <ClInclude Include="src\Scene\SceneBase.h" />

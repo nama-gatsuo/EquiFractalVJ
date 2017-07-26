@@ -1,5 +1,4 @@
 #pragma once
-
 #include "SceneBase.h"
 
 class PseudoKnightyan : public SceneBase {

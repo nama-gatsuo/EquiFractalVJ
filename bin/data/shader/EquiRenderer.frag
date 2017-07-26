@@ -21,7 +21,7 @@ void main(){
     }
 
     float c = td * 0.01;
-    vec4 col = vec4(vec3(c) + vec3(0.03, 0.03, 0.02) * cnt*0.4, 1.0);
+    vec4 col = vec4(vec3(c) + vec3(0.3, 0.3, 0.2) * cnt * 0.05, 1.0);
     col.xyz = vec3(1.0) - col.xyz;
     //col.xyz = pow(col.xyz, vec3(1./2.2));
     outputColor = col;
