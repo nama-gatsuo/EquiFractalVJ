@@ -7,6 +7,7 @@
 #include "scene/PseudoKnightyan.h"
 #include "Scene/Hartverdrahtet.h"
 
+#include "ofxOsc.h"
 #include "ofxMQTT.h"
 
 class ofApp : public ofBaseApp{
@@ -23,16 +24,18 @@ public:
 	void onOnline();
 	void onOffline();
 	void onMessage(ofxMQTTMessage& msg);
-
+	
 private:
 	ofEasyCam cam;
 	ofVboMesh plane;
 	ofFbo target;
 	
-	unsigned mode = 1;
-
+	unsigned mode = 0;
+	float dt = 1.0;
 	vector<shared_ptr<SceneBase>> scenes;
 
 	ofxMQTT client;
+
+	ofxOscReceiver receiver;
 
 };

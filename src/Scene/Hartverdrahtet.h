@@ -43,11 +43,11 @@ public:
 
 		if (isAuto) {
 			for (int i = 0; i < autoParams.size(); i++) {
-				autoParams[i].update();
+				autoParams[i].update(dt);
 				params[i].set(autoParams[i].get());
 			}
 
-			a_cs.update();
+			a_cs.update(dt);
 			cs.set(a_cs);
 
 			/*a_fc.update();

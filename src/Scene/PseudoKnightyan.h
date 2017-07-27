@@ -38,11 +38,11 @@ public:
 
 		if (isAuto) {
 			for (int i = 0; i < autoParams.size(); i++) {
-				autoParams[i].update();
+				autoParams[i].update(dt);
 				params[i].set(autoParams[i].get());
 			}
 
-			autoCsize.update();
+			autoCsize.update(dt);
 			csize.set(autoCsize);
 		}
 

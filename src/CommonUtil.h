@@ -6,8 +6,8 @@ class SmoothValue {
 public:
 	SmoothValue() :mSpeed(0.02), mValue(0), mTarget(0) {}
 
-	void update() {
-		mValue += (mTarget - mValue) * mSpeed;
+	void update(float dt = 1.0) {
+		mValue += (mTarget - mValue) * mSpeed * dt;
 	}
 
 	void to(float target) {
@@ -37,10 +37,10 @@ class SmoothPoint : public ofPoint {
 public:
 	SmoothPoint() :mSpeed(0.02) {}
 
-	void update() {
-		this->x += (mTarget.x - this->x) * mSpeed;
-		this->y += (mTarget.y - this->y) * mSpeed;
-		this->z += (mTarget.z - this->z) * mSpeed;
+	void update(float dt = 1.0) {
+		this->x += (mTarget.x - this->x) * mSpeed * dt;
+		this->y += (mTarget.y - this->y) * mSpeed * dt;
+		this->z += (mTarget.z - this->z) * mSpeed * dt;
 	}
 
 	void to(ofPoint target) {

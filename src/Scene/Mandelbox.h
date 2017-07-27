@@ -44,10 +44,10 @@ public:
 		
 		if (isAuto) {
 			for (int i = 0; i < autoParams.size(); i++) {
-				autoParams[i].update();
+				autoParams[i].update(dt);
 				params[i].set(autoParams[i].get());
 			}
-			autoOffset.update();
+			autoOffset.update(dt);
 			offset.set(autoOffset);
 		}
 
