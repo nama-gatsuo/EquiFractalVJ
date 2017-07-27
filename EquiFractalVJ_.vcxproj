@@ -96,9 +96,10 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -119,9 +120,10 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto
       <WarningLevel>Level3</WarningLevel>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -138,9 +140,10 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -162,9 +165,10 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -188,6 +192,8 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSlider.cpp" />
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp" />
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxJSON\libs\jsoncpp\src\jsoncpp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxJSON\src\ofxJSONElement.cpp" />
     <ClCompile Include="..\..\..\addons\ofxMQTT\libs\mosquitto\src\logging_mosq.c" />
     <ClCompile Include="..\..\..\addons\ofxMQTT\libs\mosquitto\src\memory_mosq.c" />
     <ClCompile Include="..\..\..\addons\ofxMQTT\libs\mosquitto\src\messages_mosq.c" />
@@ -233,6 +239,10 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto
     <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSlider.h" />
     <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.h" />
     <ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h" />
+    <ClInclude Include="..\..\..\addons\ofxJSON\libs\jsoncpp\include\json\json-forwards.h" />
+    <ClInclude Include="..\..\..\addons\ofxJSON\libs\jsoncpp\include\json\json.h" />
+    <ClInclude Include="..\..\..\addons\ofxJSON\src\ofxJSON.h" />
+    <ClInclude Include="..\..\..\addons\ofxJSON\src\ofxJSONElement.h" />
     <ClInclude Include="..\..\..\addons\ofxMQTT\libs\mosquitto\src\config.h" />
     <ClInclude Include="..\..\..\addons\ofxMQTT\libs\mosquitto\src\dummypthread.h" />
     <ClInclude Include="..\..\..\addons\ofxMQTT\libs\mosquitto\src\logging_mosq.h" />

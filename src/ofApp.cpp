@@ -22,15 +22,16 @@ void ofApp::setup(){
 	windowResized(ofGetWidth(), ofGetHeight());
 
 	cam.setDistance(5.);
-
+	
 	// MQTT
-	//client.begin("", 1111);
-	//client.connect("oF-EquiFracal", "try", "try");
+	mqtt.begin("acid.iamas.ac.jp", 1883);
+	mqtt.connect("ofx2", "senstick", "SenStick");
 
-	ofAddListener(client.onOnline, this, &ofApp::onOnline);
-	ofAddListener(client.onOffline, this, &ofApp::onOffline);
-	ofAddListener(client.onMessage, this, &ofApp::onMessage);
+	ofAddListener(mqtt.onOnline, this, &ofApp::onOnline);
+	ofAddListener(mqtt.onOffline, this, &ofApp::onOffline);
+	ofAddListener(mqtt.onMessage, this, &ofApp::onMessage);
 
+	// OSC
 	receiver.setup(7401);
 }
 
@@ -120,7 +121,7 @@ void ofApp::windowResized(int w, int h){
 }
 
 void ofApp::exit() {
-	client.disconnect();
+	mqtt.disconnect();
 }
 
 void ofApp::onOnline() {
@@ -132,5 +133,40 @@ void ofApp::onOffline() {
 }
 
 void ofApp::onMessage(ofxMQTTMessage &msg) {
-	ofLog() << "message: " << msg.topic << " - " << msg.payload;
+	
+	json.parse(msg.payload);
+	string dstr = json["date"].asString();
+	cout << json << endl;
+	
+	timeStr = dstr;
+	
+	ofxJSONElement::Members mem = json.getMemberNames();
+
+	for (int i = 0; i < mem.size(); i++) {
+		string str = mem[i];
+
+		if (str == "AccX") {
+			accel = ofVec3f(
+				json[mem[i]].asFloat(),
+				json[mem[i + 1]].asFloat(),
+				json[mem[i + 2]].asFloat()
+			);
+		} else if (str == "GyroX") {
+			gyro = ofVec3f(
+				json[mem[i]].asFloat(),
+				json[mem[i + 1]].asFloat(),
+				json[mem[i + 2]].asFloat()
+			);
+		} else if (str == "Magnetic") {
+			magnetic = json[mem[i]].asFloat();
+		} else if (str == "UV") {
+			uv = json[mem[i]].asFloat();
+		} else if (str == "AirPressure") {
+			air = json[mem[i]].asFloat();
+		} else if (str == "Humidity") {
+			humidity = json[mem[i]].asFloat();
+		} else if (str == "Brightness") {
+			brigtness = json[mem[i]].asFloat();
+		}
+	}
 }

@@ -9,6 +9,7 @@
 
 #include "ofxOsc.h"
 #include "ofxMQTT.h"
+#include "ofxJSON.h"
 
 class ofApp : public ofBaseApp{
 
@@ -34,7 +35,17 @@ private:
 	float dt = 1.0;
 	vector<shared_ptr<SceneBase>> scenes;
 
-	ofxMQTT client;
+	ofxJSONElement json;
+	ofxMQTT mqtt;
+	// mqtt senser values from senstick
+	string timeStr;
+	ofVec3f accel; // accelerometer
+	ofVec3f gyro; // gyro
+	float magnetic;  // earth magnetic
+	float humidity; // humidity
+	float uv; // ultraviolet
+	float brigtness; // brightness
+	float air; // air presssure
 
 	ofxOscReceiver receiver;
 
