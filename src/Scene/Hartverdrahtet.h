@@ -28,7 +28,7 @@ public:
 			autoParams.push_back(sv);
 		}
 
-		cs.set("cs", ofVec3f(.808, .808, 1.167), ofVec3f(0.8, 0.6, 0.6), ofVec3f(1.1));
+		cs.set("cs", ofVec3f(.808, .808, 1.167), ofVec3f(0.5), ofVec3f(1.5, 1.5,1.1));
 		panel.add(cs);
 		a_cs.set(ofPoint(0.));
 

@@ -114,6 +114,9 @@
     <Filter Include="addons\ofxOsc\libs\oscpack\src\osc">
       <UniqueIdentifier>{719a99e0-9e72-4747-b0bf-38078c55c8de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="addons\ofxMQTT">
+      <UniqueIdentifier>{95996a09-e655-4756-b153-d3cb3460bb59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h">

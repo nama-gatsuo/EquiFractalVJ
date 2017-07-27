@@ -7,6 +7,8 @@
 #include "scene/PseudoKnightyan.h"
 #include "Scene/Hartverdrahtet.h"
 
+#include "ofxMQTT.h"
+
 class ofApp : public ofBaseApp{
 
 public:
@@ -17,6 +19,11 @@ public:
 	void keyPressed(int key);
 	void windowResized(int w, int h);
 
+	void exit();
+	void onOnline();
+	void onOffline();
+	void onMessage(ofxMQTTMessage& msg);
+
 private:
 	ofEasyCam cam;
 	ofVboMesh plane;
@@ -25,5 +32,7 @@ private:
 	unsigned mode = 1;
 
 	vector<shared_ptr<SceneBase>> scenes;
+
+	ofxMQTT client;
 
 };
