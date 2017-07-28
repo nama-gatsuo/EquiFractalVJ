@@ -5,6 +5,7 @@ out vec4 outputColor;
 
 uniform vec2 size;
 uniform vec3 cp;
+uniform vec3 uCol;
 
 uniform vec3 cs;
 uniform float fs;
@@ -26,4 +27,4 @@ float DF(vec3 z0) {
 	return fd * max(z, abs(length(z0.xy) * z0.z) / sqrt(dot(z0, z0))) / abs(v);
 }
 
-#pragma include "SimpleRenderer.frag"
+#pragma include "EquiRenderer.frag"

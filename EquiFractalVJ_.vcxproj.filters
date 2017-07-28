@@ -133,6 +133,12 @@
     <ClCompile Include="..\..\..\addons\ofxJSON\libs\jsoncpp\src\jsoncpp.cpp">
       <Filter>addons\ofxJSON\libs\jsoncpp\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\PostEffect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.cpp">
+      <Filter>addons\ofxTrueTypeFontUC\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -209,6 +215,12 @@
     </Filter>
     <Filter Include="addons\ofxJSON\libs\jsoncpp\src">
       <UniqueIdentifier>{adba2359-ad60-4176-967c-35ec3d02329f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTrueTypeFontUC">
+      <UniqueIdentifier>{785cb825-7d29-4d73-982c-c02377151965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTrueTypeFontUC\src">
+      <UniqueIdentifier>{e79298e9-45a0-4424-ac7e-5b44b85cbf65}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -382,6 +394,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxJSON\libs\jsoncpp\include\json\json.h">
       <Filter>addons\ofxJSON\libs\jsoncpp\include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PostEffect.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.h">
+      <Filter>addons\ofxTrueTypeFontUC\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

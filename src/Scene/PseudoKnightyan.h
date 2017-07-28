@@ -31,7 +31,7 @@ public:
 		panel.add(csize);
 		autoCsize.set(ofPoint(0.));
 
-		panel.add(isAuto.setup("auto", false));
+		panel.add(isAuto.setup("auto", true));
 
 	};
 	void update(float dt) {
@@ -51,6 +51,7 @@ public:
 
 		shader.begin();
 		shader.setUniform3f("cp", cam.getPosition());
+		shader.setUniform3f("uCol", color);
 
 		shader.setUniform1f("kFactor", params[0].get());
 		shader.setUniform1f("offset", params[1].get());
@@ -59,7 +60,7 @@ public:
 		rect.draw();
 		shader.end();
 
-		panel.draw();
+		if (isShowPanel) panel.draw();
 
 	};
 	void randomize() {

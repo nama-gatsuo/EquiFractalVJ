@@ -1,15 +1,18 @@
 #pragma once
 
 #include "ofMain.h"
-#include "scene/scenebase.h"
-#include "scene/mandelbox.h"
-#include "scene/Tgrad.h"
-#include "scene/PseudoKnightyan.h"
+#include "Scene/scenebase.h"
+#include "Scene/mandelbox.h"
+#include "Scene/Tgrad.h"
+#include "Scene/PseudoKnightyan.h"
 #include "Scene/Hartverdrahtet.h"
+
+#include "PostEffect.h"
 
 #include "ofxOsc.h"
 #include "ofxMQTT.h"
 #include "ofxJSON.h"
+#include "ofxTrueTypeFontUC.h"
 
 class ofApp : public ofBaseApp{
 
@@ -35,6 +38,8 @@ private:
 	float dt = 1.0;
 	vector<shared_ptr<SceneBase>> scenes;
 
+	PostEffect pe;
+
 	ofxJSONElement json;
 	ofxMQTT mqtt;
 	// mqtt senser values from senstick
@@ -48,5 +53,5 @@ private:
 	float air; // air presssure
 
 	ofxOscReceiver receiver;
-
+	ofxTrueTypeFontUC font;
 };

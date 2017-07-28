@@ -18,11 +18,19 @@ public:
 		shader.end();
 	};
 
+	void setColor(ofVec3f& c) {
+		color = c;
+	};
+	void togglePanel() { isShowPanel = !isShowPanel; }
+
 	ofShader shader;
 	ofxPanel panel;
+	bool isShowPanel = false;
 
 	vector<SmoothValue> autoParams;
 	vector<ofParameter<float>> params;
 
 	ofxToggle isAuto;
+
+	ofVec3f color;
 };

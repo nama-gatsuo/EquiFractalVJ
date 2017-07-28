@@ -2,6 +2,9 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	ofSetVerticalSync(true);
+	font.loadFont("font/OpenSans-Light.ttf", 12, true, true);
+
 	shared_ptr<SceneBase> s0(new Mandelbox());
 	s0->setup();
 	scenes.push_back(s0);
@@ -21,6 +24,7 @@ void ofApp::setup(){
 	plane.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
 	windowResized(ofGetWidth(), ofGetHeight());
 
+	pe.setup();
 	cam.setDistance(5.);
 	
 	// MQTT
@@ -38,6 +42,8 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 	
+	mqtt.update();
+
 	while (receiver.hasWaitingMessages()) {
 		ofxOscMessage m;
 		receiver.getNextMessage(m);
@@ -48,16 +54,25 @@ void ofApp::update(){
 		if (dirs[1] == "p") {
 			int i = ofToInt(dirs[2]);
 			float val = m.getArgAsInt(0) / 128.;
-			if (i == 4) {
+			if (i == 3) {
+				pe.setOpacity(val);
+			}
+			else if (i == 4) {
 				dt = 0.1 + val * 3.0;
 			} 
 		} else if (dirs[1] == "bang") {
 			int i = ofToInt(dirs[2]);
 
 			if (i == 0) {
-				cout << "bang0" << endl;
+				float coin = ofRandom(1.);
+				if (coin < 0.1) mode = floor(ofRandom(scenes.size()));
+
+				scenes[mode]->randomize();
 			} else if (i == 1) {
-				cout << "bang1" << endl;
+				float coin = ofRandom(1.);
+				if (coin < 0.4) pe.setMode(0);
+				else if (coin < 0.7) pe.setMode(1);
+				else pe.setMode(2);
 			}
 
 		} else if (dirs[1] == "key") {
@@ -76,16 +91,26 @@ void ofApp::update(){
 	}
 
 	scenes[mode]->update(dt);
+	
 	cam.begin();
 	cam.end();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	
+	pe.begin();
 	scenes[mode]->render(cam, plane);
-	ofDrawBitmapString("FPS: " + ofToString(ofGetFrameRate()), 10, 40);
+	pe.end();
 
+	pe.draw();
+
+	ofSetColor(0);
+	ofDrawRectangle(0, ofGetHeight() - 50,200,ofGetHeight()-50);
+	ofSetColor(255);
+	//font.drawStringAsShapes(ofToString(timeStr), 10, 10, ofGetHeight() - 15);
+	font.drawStringAsShapes("FPS: " + ofToString(ofGetFrameRate()), 10, ofGetHeight() - 15);
+	font.drawStringAsShapes("FPS: " + ofToString(ofGetFrameRate()), 10, ofGetHeight());
+	
 }
 
 //--------------------------------------------------------------
@@ -98,6 +123,20 @@ void ofApp::keyPressed(int key){
 	else if (key == OF_KEY_LEFT) {
 		mode--;
 		if (mode == -1) mode = scenes.size() - 1;
+	}
+	else if (key == 's') {
+		for (int i = 0; i < scenes.size(); i++) {
+			scenes[i]->togglePanel();
+		}
+	}
+	else if (key == 'q') {
+		pe.setMode(0);
+	}
+	else if (key == 'w') {
+		pe.setMode(1);
+	}
+	else if (key == 'e') {
+		pe.setMode(2);
 	}
 }
 
@@ -118,6 +157,8 @@ void ofApp::windowResized(int w, int h){
 	for (int i = 0; i < scenes.size(); i++) {
 		scenes[i]->resize(w,h);
 	}
+
+	pe.resize(w, h);
 }
 
 void ofApp::exit() {
@@ -125,7 +166,8 @@ void ofApp::exit() {
 }
 
 void ofApp::onOnline() {
-	ofLog() << "online";
+	cout << "online" << endl;
+	mqtt.subscribe("senstick");
 }
 
 void ofApp::onOffline() {
@@ -136,7 +178,7 @@ void ofApp::onMessage(ofxMQTTMessage &msg) {
 	
 	json.parse(msg.payload);
 	string dstr = json["date"].asString();
-	cout << json << endl;
+	//cout << json << endl;
 	
 	timeStr = dstr;
 	
@@ -151,6 +193,14 @@ void ofApp::onMessage(ofxMQTTMessage &msg) {
 				json[mem[i + 1]].asFloat(),
 				json[mem[i + 2]].asFloat()
 			);
+
+			accel.x = abs(accel.x) * 0.5;
+			accel.y = abs(accel.y) * 0.5;
+			accel.z = abs(accel.z) * 0.5;
+			scenes[mode]->setColor(accel);
+
+			cout << accel << endl;
+
 		} else if (str == "GyroX") {
 			gyro = ofVec3f(
 				json[mem[i]].asFloat(),
@@ -168,5 +218,6 @@ void ofApp::onMessage(ofxMQTTMessage &msg) {
 		} else if (str == "Brightness") {
 			brigtness = json[mem[i]].asFloat();
 		}
+		break;
 	}
 }

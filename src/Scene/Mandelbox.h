@@ -37,7 +37,7 @@ public:
 
 		rep.set("reptition", 0., 0.0, 8.0);
 
-		panel.add(isAuto.setup("auto", false));
+		panel.add(isAuto.setup("auto", true));
 
 	};
 	void update(float dt) {
@@ -56,6 +56,7 @@ public:
 		
 		shader.begin();
 		shader.setUniform3f("cp", cam.getPosition());
+		shader.setUniform3f("uCol", color);
 		
 		shader.setUniform1f("minRadius2", params[0].get());
 		shader.setUniform1f("fixedRadius2", params[1].get());
@@ -67,7 +68,7 @@ public:
 		rect.draw();
 		shader.end();
 
-		panel.draw();
+		if (isShowPanel) panel.draw();
 
 	};
 	void randomize() {

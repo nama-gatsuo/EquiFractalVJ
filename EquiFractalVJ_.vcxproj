@@ -96,10 +96,8 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxTrueTypeFontUC\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -120,10 +118,8 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\i
       <WarningLevel>Level3</WarningLevel>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxTrueTypeFontUC\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -140,10 +136,8 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\i
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxTrueTypeFontUC\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -165,10 +159,8 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\i
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;
-G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGui\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxGui\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxMQTT\libs\mosquitto\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\src;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include;G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\include\json;
+G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxTrueTypeFontUC\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -226,8 +218,10 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\i
     <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
     <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.cpp" />
     <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscSender.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\PostEffect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h" />
@@ -280,8 +274,10 @@ G:\Users\anagamat16\Documents\of_v0.9.8_vs_release\addons\ofxJSON\libs\jsoncpp\i
     <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.h" />
     <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.h" />
     <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h" />
+    <ClInclude Include="..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.h" />
     <ClInclude Include="src\CommonUtil.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\PostEffect.h" />
     <ClInclude Include="src\Scene\Hartverdrahtet.h" />
     <ClInclude Include="src\Scene\Mandelbox.h" />
     <ClInclude Include="src\Scene\PseudoKnightyan.h" />

@@ -5,6 +5,7 @@ out vec4 outputColor;
 
 uniform vec2 size;
 uniform vec3 cp;
+uniform vec3 uCol;
 
 uniform float minr;
 uniform float maxr;
@@ -27,4 +28,4 @@ float DF(vec3 z0) {
     return dS;
 }
 
-#pragma include "simpleRenderer.frag"
+#pragma include "EquiRenderer.frag"

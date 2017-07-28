@@ -32,11 +32,11 @@ public:
 		panel.add(cs);
 		a_cs.set(ofPoint(0.));
 
-		fc.set("fc", ofVec3f(0.), ofVec3f(-0.4), ofVec3f(0.4));
+		fc.set("fc", ofVec3f(0.), ofVec3f(0.,0.,-0.4), ofVec3f(0., 0., 0.4));
 		panel.add(fc);
 		a_fc.set(ofPoint(0.));
 
-		panel.add(isAuto.setup("auto", false));
+		panel.add(isAuto.setup("auto", true));
 
 	};
 	void update(float dt) {
@@ -60,6 +60,7 @@ public:
 
 		shader.begin();
 		shader.setUniform3f("cp", cam.getPosition());
+		shader.setUniform3f("uCol", color);
 
 		shader.setUniform3f("cs", cs);
 		shader.setUniform1f("fs", params[0].get());
@@ -70,7 +71,7 @@ public:
 		rect.draw();
 		shader.end();
 
-		panel.draw();
+		if (isShowPanel) panel.draw();
 
 	};
 	void randomize() {
@@ -79,7 +80,7 @@ public:
 		}
 
 		a_cs.toRandom(cs.getMin(), cs.getMax());
-		/*a_fc.toRandom(fc.getMin(), fc.getMax());*/
+		a_fc.toRandom(fc.getMin(), fc.getMax());
 	};
 
 private:

@@ -1,0 +1,7 @@
+<group>
+	<min_radius_2>0.1</min_radius_2>
+	<fixed_radius_2>0.9</fixed_radius_2>
+	<folding_limit>0.9</folding_limit>
+	<scale>-3.12</scale>
+	<offset>0, 0, 0</offset>
+</group>

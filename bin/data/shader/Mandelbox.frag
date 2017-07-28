@@ -5,6 +5,7 @@ out vec4 outputColor;
 
 uniform vec2 size;
 uniform vec3 cp;
+uniform vec3 uCol;
 
 uniform float minRadius2;
 uniform float fixedRadius2;
@@ -45,4 +46,4 @@ float DF(vec3 z){
     return length(z) / abs(dr);
 }
 
-#pragma include "simpleRenderer.frag"
+#pragma include "EquiRenderer.frag"
